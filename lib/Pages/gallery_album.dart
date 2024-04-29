@@ -140,18 +140,23 @@ class GalleryAlbum extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * 0.9,
                     height: 51,
                     child: ElevatedButton(
-                        onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFF2CAB00),
-                          foregroundColor: Colors.white,
-                          textStyle: TextThemes.getTextStyle(
-                            fontSize: 20,
-                            fontFamily: "Poppins",
-                            letterSpacing: 0.5,
-                          ),
-                          elevation: 15,
+                      onPressed: () {},
+                      style: ElevatedButton.styleFrom(
+                        primary: const Color(0xFF2CAB00), // Background color
+                        onPrimary: Colors.white, // Text color
+                        textStyle: TextThemes.getTextStyle(
+                          fontSize: 20,
+                          fontFamily: "Poppins",
+                          letterSpacing: 0.5,
                         ),
-                        child: const Text("See More")),
+                        elevation: 15,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15),
+                        ),
+                      ),
+                      child: const Text("See More"),
+                    )
+
                   ),
                 )
               ],
@@ -266,17 +271,22 @@ class GalleryAlbum extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 51,
                           child: ElevatedButton(
-                              onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor: const Color(0xFF2CAB00),
-                                foregroundColor: Colors.white,
-                                textStyle: TextThemes.getTextStyle(
-                                    fontSize: 20,
-                                    fontFamily: "Poppins",
-                                    letterSpacing: 0.5),
-                                elevation: 15,
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              primary: const Color(0xFF2CAB00), // Background color
+                              onPrimary: Colors.white, // Text color
+                              textStyle: TextThemes.getTextStyle(
+                                fontSize: 20,
+                                fontFamily: "Poppins",
+                                letterSpacing: 0.5,
                               ),
-                              child: const Text("See More")),
+                              elevation: 15,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15),
+                              ),
+                            ),
+                            child: const Text("See More"),
+                          )
                         ),
                       )
                     ],
